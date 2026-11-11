@@ -1,7 +1,6 @@
 -------------------------------------------------------------------------------
 -- Logic Networks 2026 - Exercise:
 -- Car Parking System
--- Source: state diagram 
 -------------------------------------------------------------------------------
 
 library ieee;
@@ -23,6 +22,41 @@ entity Car_Parking_System_VHDL is
 end entity;
 
 architecture rtl of Car_Parking_System_VHDL is
-
+  type state_type is (IDLE, WAIT_PASSWORD, WRONG_PASSWORD, RIGHT_PASSWORD, STOP);
+  signal current_state : state_type;
+  signal next_state    : state_type;
 begin
+
+  -- state register
+  reg: process (clk, reset_n)
+  begin
+    if reset_n = '0' then
+      current_state <= IDLE;
+    elsif rising_edge(clk) then
+      current_state <= next_state;
+    end if;
+  end process;
+
+  FSM: process (clk)
+  begin
+    next_state <= current_state;
+
+    case current_state is
+      when IDLE =>
+        if (front_sensor = '1') then
+          next_state <= WAIT_PASSWORD;
+        else
+          next_state <= IDLE;
+        end if;
+
+      when WAIT_PASSWORD =>
+
+      when WRONG_PASSWORD =>
+
+      when RIGHT_PASSWORD =>
+
+      when STOP =>
+
+    end case;
+  end process;
 end architecture;
