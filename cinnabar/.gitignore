@@ -1,0 +1,29 @@
+# Xilinx / Vivado build artifacts
+*.bit
+*.bin
+*.mcs
+*.prm
+*.xpr
+.Xil/
+*.jou
+*.log
+*.str
+*/runs/
+*/ip/
+*_synth_*/
+*_impl_*/
+
+# GHDL / ModelSim artifacts
+*.o
+*.cf
+*.vcd
+*.ghw
+*.wlf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
