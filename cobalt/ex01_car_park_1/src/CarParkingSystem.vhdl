@@ -17,7 +17,7 @@ entity Car_Parking_System_VHDL is
 end Car_Parking_System_VHDL;
 
 architecture Car_Park of Car_Parking_System_VHDL is
-    type   state_t is (S_IDLE, S_WAIT_PASSWORD, S_WRONG_PASSWORD, S_RIGHT_PASSWORD, P);
+    type   state_t is (S_IDLE, S_WAIT_PASSWORD, S_WRONG_PASSWORD, S_RIGHT_PASSWORD, S_STOP);
     signal state   : state_t;
 begin
 end architecture Car_Park;
