@@ -14,3 +14,10 @@ entity Car_Parking_Sytem_VHDL is
     HEX_2        : out std_logic_vector(6 downto 0)
   );
   end Car_Parking_System_VHDL;
+
+
+  architecture rtl of Car_Parking_System_VHDL is
+    type state_t is (IDLE, WAIT_PASSWORD, WRONG_PASS, RIGHT_PASS, STOP);
+    signal state, next_state : state_t;
+  begin
+    
