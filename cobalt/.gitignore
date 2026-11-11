@@ -27,3 +27,6 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Editor and extensions
+*/vhdl_ls.toml
