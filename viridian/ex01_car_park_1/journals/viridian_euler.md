@@ -1,6 +1,6 @@
-# Journal — Exercise 1 — Car Park 1
+# Journal â€” Exercise 1 â€” Car Park 1
 
-> **You:** `viridian_euler` · **Group:** `viridian` · **Opened:** 2026-11-11
+> **You:** `viridian_euler` Â· **Group:** `viridian` Â· **Opened:** 2026-11-11
 > The code in this folder is shared with your group. **This journal is yours alone.**
 > Write entries as you work, not after the fact.
 
@@ -8,17 +8,17 @@
 
 ## Decision log
 
-### Entry — 2026-11-11
+### Entry â€” 2026-11-11
 **Commit reference:** `<!-- paste: git log --oneline -1 -->`
 
 **What I implemented or decided:**
-<!-- 2–4 sentences. Be specific about architecture choices. -->
-
+<!-- 2â€“4 sentences. Be specific about architecture choices. -->
+We decided how to divide the work. Two of us will work on the TB.  
 **Why I structured it this way:**
 <!-- What alternatives did you consider? Why did you reject them? -->
 
 **What I am not sure about:**
-<!-- Honest uncertainty. Never graded for correctness — only for presence. -->
+<!-- Honest uncertainty. Never graded for correctness â€” only for presence. -->
 
 **What the simulation or hardware told me I was wrong about:**
 <!-- Leave blank now. Fill in when you find out. Most important field. -->
